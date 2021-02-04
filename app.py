@@ -9,10 +9,10 @@ app.secret_key = 'uniandes'
 
 mysql = MySQL()
 
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'ANDRESleonardo21@'
+app.config['MYSQL_DATABASE_USER'] = 'alam'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'ARQmox21'
 app.config['MYSQL_DATABASE_DB'] = 'testingdb'
-app.config['MYSQL_DATABASE_HOST'] = '127.0.0.1'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
  
 
