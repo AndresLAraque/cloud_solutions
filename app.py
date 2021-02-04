@@ -12,7 +12,7 @@ mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'ANDRESleonardo21@'
 app.config['MYSQL_DATABASE_DB'] = 'testingdb'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+app.config['MYSQL_DATABASE_HOST'] = '127.0.0.1'
 mysql.init_app(app)
  
 
@@ -96,5 +96,6 @@ def profile():
     return redirect(url_for('login'))
   
 if __name__ == '__main__':
+    app.run(debug = True)
     #app.run(port = 8080, debug = True)
-    app.run(host="0.0.0.0", port = 8080, debug = True)
+    #app.run(host="0.0.0.0", port = 8080, debug = True)
